@@ -7,6 +7,7 @@ import c from "../images/techstack_images/c.png"
 import github from "../images/techstack_images/github.png"
 import javascript from "../images/techstack_images/javascript.png"
 import firebase from "../images/techstack_images/firebase.png"
+import TechStackIcon from "./TechStackIcon/TechStackIcon";
 
 function TechStack() {
 
@@ -46,39 +47,49 @@ const techstackData2=[
     },
 ]
    
+ /*function A(name){
+    console.log("Hello "+name+", "+"Good Morning!")
+}
+A("Vishwajeet")
+A("Mr. Serious")
+*/
 
+//Create function showIcon()  
+
+
+/*function showIcon(param){
+    return(
+        <div className="techstack_image_element_container"> 
+        <img src={param.iconImage} alt={param.iconAltProperty} />
+        <p>{param.iconName}</p>
+    </div>
+
+    )
+}*/
 
 
     return(
      <div className="techstack_container"> 
                  <p className="techstack_title">TechStack</p>
         <div className="techstack_image_rows_container">
+            {/*  Tech Stack Row 1   */}
                 <div className="techstack_image_container_row1">
                     {techstackData.map((value,key)=>(
-                         <div className="techstack_image_element_container"> 
-                         <img src={value.iconImage} alt={value.iconAltProperty} />
-                         <p>{value.iconName}</p>
-                     </div>
-
-                    ))}
-                       
-                        
+                    /*    showIcon(value) */
+                       <TechStackIcon data={value}  /> 
+                    ))}                                              
                  </div>
-
+{/*  Div two or Row two for Techstack data 2  */}
                 <div className="techstack_image_container_row1">
-
                 {techstackData2.map((value,key)=>(
-                         <div className="techstack_image_element_container"> 
-                         <img src={value.iconImage} alt={value.iconAltProperty} />
-                         <p>{value.iconName}</p>
-                     </div>
+                       //Method 1. Using showIcon function() and return html from it 
+                      /*  showIcon(value) */
 
+
+                    // Method 2. Create componet, pass props to make it work according to need.
+                        <TechStackIcon data={value}  /> 
                     ))}
-                        
-                
-                 </div>
-                
-                
+                 </div>  
         </div>
         
      </div>

@@ -3,7 +3,8 @@ import './App.css';
 import Navbar from "./components/Navbar/Navbar.js";
 import About from "./components/About/About.js";
 import TechStack from "./components/TechStack/TechStack.js";
-
+import Experience from "./components/Experience/ExperienceBox/Experience.js"
+import ExperienceBox from "./components/Experience/ExperienceBox/ExperienceBox.js"
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
     <Navbar />
     <About />
     <TechStack />
+    <ExperienceBox />
+    <Experience />
        
     </div>
   );
