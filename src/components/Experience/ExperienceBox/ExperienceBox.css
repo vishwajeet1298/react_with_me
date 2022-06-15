@@ -1,0 +1,11 @@
+.ex_box_container {
+    background-color: red;
+    width: 500px;
+    display: block;
+    
+    
+}
+.ex_images_container{
+    display: flex;
+    justify-content: center;
+}
