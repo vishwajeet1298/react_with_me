@@ -1,11 +1,33 @@
 .ex_box_container {
-    background-color: red;
+    background-color:#181818;
     width: 500px;
     display: block;
-    
+    box-shadow: -8px 8px 8px 0 red;
+    padding: 14px 18px;
+    margin: 40px;
+
+}
+.ex_box_title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+.ex_box_sentences> p {
+    font-size: 16px;
     
 }
-.ex_images_container{
+.ex_box_subtitle{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+.ex_box_images_container{
     display: flex;
-    justify-content: center;
+   justify-content: center;
+}
+.ex_box_images_container > img{
+   height: 20;
+   margin: 0 10px;
+   background-color: black;
+
 }

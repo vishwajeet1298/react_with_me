@@ -1,0 +1,15 @@
+.project_box_container {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.projects_title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+
+}
+
+

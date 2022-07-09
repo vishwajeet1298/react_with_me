@@ -11,14 +11,14 @@ function ExperienceBox({ title, sentences, subtitle, images }) {
 
   return( 
     <div className="ex_box_container">
-        <p>{title}</p>
-        <div>
+        <p className="ex_box_title">{title}</p>
+        <div className="ex_box_sentences >p ">
             {sentences.map((value, key) => (
                 <p>{value}</p>
             ))}
         </div>
-        <p>{subtitle}</p>
-        <div className="ex_images_container">
+        <p className="ex_box_subtitle">{subtitle}</p>
+        <div className="ex_box_images_container">
             {images.map((value, key) => (
                 <img src={value} />
             ))}
